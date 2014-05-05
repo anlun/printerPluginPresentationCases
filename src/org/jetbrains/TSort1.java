@@ -37,7 +37,7 @@ public class TSort1 {
         }
         while (i < middle) { myBuffer[k] = myArr[i]; i++; k++; }
         while (j < r     ) { myBuffer[k] = myArr[j]; j++; k++; }
-        for (int q = 0; q < k; q++) { myArr[l + q] = myBuffer[q]; }
+        System.arraycopy(myBuffer, 0, myArr, l, k);
     }
 
     private void printArray() {

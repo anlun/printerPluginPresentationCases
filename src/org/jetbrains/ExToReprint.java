@@ -3,10 +3,10 @@ package org.jetbrains;
 public class ExToReprint {
     private long[] array;
 
-    int binarySearch(long v) {
+    private int binarySearch(long v) {
         return binarySearch(v, 0, array.length);
     }
-    int binarySearch(long v, int l, int r) {
+    private int binarySearch(long v, int l, int r) {
         if (r - l <= 1) {
             if (array[l] == v) { return l; }
             return -1;
@@ -17,7 +17,7 @@ public class ExToReprint {
         return medium;
     }
 
-    void sort() {
+    private void sort() {
         for (int i = array.length - 1; i >= 0; i--) {
             long max = array[0];
             array[0] = array[i];
